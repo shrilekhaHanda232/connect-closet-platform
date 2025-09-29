@@ -1,8 +1,8 @@
-@import "./styles/variables";
+@use "./styles/variables" as vars;
 
 .app {
-  background: $app-background;
+  background: vars.$app-background;
   min-height: 100vh;
-  color: $text-main;
+  color: vars.$text-main;
   font-family: "Roboto", Arial, sans-serif;
 }

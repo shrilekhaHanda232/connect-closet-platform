@@ -1,8 +1,8 @@
-@import "../../../styles/variables";
+@use "../../../styles/variables" as vars;
 
 .filter-bar {
-  background: $app-background;
-  color: $text-main;
+  background: vars.$app-background;
+  color: vars.$text-main;
   padding: 17px 16px;
   border-radius: 8px;
   display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
     span {
       font-size: 10px;
-      color: $text-muted;
+      color: vars.$text-muted;
     }
 
     label.pricing-option {
@@ -22,7 +22,7 @@
       margin-left: 4px;
       padding-left: 25px;
       cursor: pointer;
-      font-size: $default-font-size;
+      font-size: vars.$default-font-size;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -39,13 +39,13 @@
 
       &:hover {
         input ~ .checkmark {
-          background-color: $text-muted;
+          background-color: vars.$text-muted;
         }
       }
 
       input:checked {
         ~ .checkmark {
-          background-color: $app-background;
+          background-color: vars.$app-background;
 
           &::after {
             display: block;
@@ -60,7 +60,7 @@
         height: 15px;
         width: 15px;
         background-color: #3b3b3b;
-        border: 1px solid $text-main;
+        border: 1px solid vars.$text-main;
         border-radius: 3px;
 
         &::after {
@@ -97,14 +97,14 @@
   }
 
   .reset-btn {
-    background: $app-background;
-    color: $text-main;
+    background: vars.$app-background;
+    color: vars.$text-main;
     font-size: 0.6rem;
     cursor: pointer;
     margin-left: 12px;
     border: none;
     &:hover {
-      color: $text-highlight;
+      color: vars.$text-highlight;
     }
   }
 }

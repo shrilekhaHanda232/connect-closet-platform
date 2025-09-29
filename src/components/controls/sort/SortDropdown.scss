@@ -1,4 +1,4 @@
-@import "../../../styles/variables";
+@use "../../../styles/variables" as vars;
 
 .sort-dropdown {
   display: flex;
@@ -8,14 +8,14 @@
   font-size: 0.7rem;
 
   label {
-    color: $text-main;
+    color: vars.$text-main;
   }
 
   select {
-    background: $dark-grey;
-    color: $text-main;
+    background: vars.$dark-grey;
+    color: vars.$text-main;
     border: none;
-    border-bottom: 1px solid $text-muted;
+    border-bottom: 1px solid vars.$text-muted;
     padding: 0.3rem 1.2rem 0.3rem 0.1rem;
     min-width: 110px;
     font-size: 0.7rem;

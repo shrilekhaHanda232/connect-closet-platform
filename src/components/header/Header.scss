@@ -1,14 +1,14 @@
-@import "../../styles/variables";
+@use "../../styles/variables" as vars;
 
 .header {
-  background: $app-background;
-  color: $text-main;
+  background: vars.$app-background;
+  color: vars.$text-main;
   padding: 24px 32px;
 
   .logo {
     font-weight: bold;
     font-size: 1rem;
-    color: $green-font-color;
+    color: vars.$green-font-color;
     letter-spacing: 2px;
   }
 }

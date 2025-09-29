@@ -1,9 +1,9 @@
-@import "../../styles/variables";
+@use "../../styles/variables" as vars;
 
 .controls {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 16px 32px 0 32px;
-  background: $dark-grey;
+  background: vars.$dark-grey;
 }
